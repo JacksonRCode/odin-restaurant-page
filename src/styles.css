@@ -1,0 +1,110 @@
+:root {
+  --background1: #5D4037;
+  --background2: #F5E1C8;
+  --background3: #F9A825;
+  --mainText: #D32F2F;
+  --secondaryText: white;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 32px;
+
+  background-color: var(--background2);
+}
+
+header > h2 {
+  color: var(--mainText);
+  font-size: 32px;
+}
+
+header > nav {
+  justify-self: center;
+  
+  display: flex;
+  gap: 48px;
+}
+
+nav > button {
+  width: 128px;
+  height: 40px;
+
+  background-color: var(--background3);
+
+  border: 2px solid var(--background1);
+  border-radius: 8px;
+}
+
+#content {
+  background-color: var(--background1);
+  flex: 1;
+  display: flex;
+
+  padding: 48px 256px;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+
+  padding: 32px 128px;
+
+  background-color: var(--background2);
+
+  border-radius: 8px;
+}
+
+h1 {
+  color: var(--mainText);
+  font-size: 40px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.group > p {
+  font-size: 20px;
+}
+
+img {
+  width: 300px;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 32px;
+  border: 1px solid var(--background1);
+}
+
+.ulLeft {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+li {
+  list-style-type: none;
+}
+
+
